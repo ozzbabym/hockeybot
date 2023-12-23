@@ -85,11 +85,11 @@ const getStatisticGame = (statistics) => {
     let stockGame = ["\nВряд\n"];
     statistics.statistics.allGame.forEach((game)=> {
         if (getSuccessGames([game]).length) {
-            stockGame.push('✅\n');
+            stockGame.push(`✅\n ${game.id} ${game.set2player1} ${game.set2player2}`);
         } else if (getFailGames([game]).length) {
-            stockGame.push('❌\n');
+            stockGame.push(`❌\n ${game.id} ${game.set2player1} ${game.set2player2}`);
         } else {
-            stockGame.push('⚠️\n');
+            stockGame.push(`⚠️\n ${game.id} ${game.set2player1} ${game.set2player2}`);
         }
     });
     return stockGame.join("");
