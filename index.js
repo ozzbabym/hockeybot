@@ -208,8 +208,8 @@ const sendMessages = (subject, subjectFile, result) => {
                 + "1 Период закончился 0 0\n"
                 + player1 + ":  " + set1player1 + " "+ set2player1 + "\n"
                 + player2 + ":  " + set1player2 + " "+ set2player2 + "\n"
-                "\nКогда начнется 2 Период," +
-                " сделай ставку тотал 0,5 Б во втором периоде \n\n";
+                + "\nКогда начнется 2 Период," +
+                " сделай ставку тотал 0,5Б или 1Б во втором периоде \n\n";
                 xhttp.open("GET", url1 + encodeURIComponent(text), true)
                 xhttp.send();
             return;
