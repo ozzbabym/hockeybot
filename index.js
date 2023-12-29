@@ -13,7 +13,7 @@ app.listen(PORT, () => {
 let good = `✅✅✅`;
 let bad = `❌❌❌`;
 
-let othersGames = /Simulated|Reality|Cyber|RHL/;
+let othersGames = /Simulated|Reality|Cyber|RHL|Dream League|3HL|MNHL/;
 let xhttp = new XMLHttpRequest();
 const url1 = 'https://api.telegram.org/bot1219533506:AAFWBi6UMHINMQD0o6zlzCnPFCQCLxbOm2Q/sendMessage?chat_id=-4071489870&text=';
 
